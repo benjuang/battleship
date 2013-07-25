@@ -1,0 +1,73 @@
+td {
+  border: 1px solid gray;
+  width: 15px;
+  height: 18px;
+}
+.active td:hover {
+  background-color: green;
+}
+.start {
+  background-color: green;
+}
+
+#ships {
+  width: 300px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+#ships .carrier {
+  color: blue;
+}
+#ships .battleship {
+  color: purple;
+}
+#ships .sub {
+  color: orange;
+}
+#ships .destroyer {
+  color: gray;
+}
+#ships .patrol {
+  color: black;
+}
+
+#gameboard .carrier {
+  background-color: blue;
+}
+#gameboard .battleship {
+  background-color: purple;
+}
+#gameboard .sub {
+  background-color: orange;
+}
+#gameboard .destroyer {
+  background-color: gray;
+}
+#gameboard .patrol {
+  background-color: black;
+}
+
+.damage {
+  background-color: red !important;
+}
+.guess {
+  background-color: black;
+}
+.win {
+  font-size: 2em; 
+}
+
+.blackoutCurtain {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  font-size: 3em;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 1;
+  color: red;
+}

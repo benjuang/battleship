@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="battleship.js"></script>
+    <link rel="stylesheet" type="text/css" href="battleship.css"/>
+    <title>Battleship</title>
+  </head>
+  <body>
+    <div class="blackoutCurtain" style="display:none;">
+      Click when ready.
+    </div>
+    Current Player: <span id="current_player"></span><br/>
+    Your Ships: <br/>
+    <div id="gameboard" class="active"></div>
+    <div id="ships">
+      <ul>
+        <li class="carrier">
+          aircraft carrier - 5
+        </li>
+        <li class="battleship">
+          battleship - 4
+        </li>
+        <li class="sub">
+          submarine - 3
+        </li>
+        <li class="destroyer">
+          destroyer - 3
+        </li>
+        <li class="patrol">
+          patrol boat - 2
+        </li>
+      </ul>
+    </div>
+    <button class="placementButton" disabled onclick="donePlacement()">Done!</button>
+    <hr>
+    Guesses: <br/>
+    <div id="guesses"></div>
+    <div class="message"></div>
+
+    <button class="turnButton" onclick="nextTurn()">Done!</button>
+
+    <div class="win"></div>
+  </body>
+</html>
